@@ -1,55 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Step Form UI</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <style>
-        /* Remove fieldset default border */
-        fieldset {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        legend {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .name-fields {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        label {
-            display: block;
-            margin-top: 1rem;
-            font-weight: 500;
-        }
-
-        input, select {
-            display: block;
-            width: 100%;
-            margin-top: 0.3rem;
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            margin-top: 1.5rem;
-            padding: 0.75rem 1.5rem;
-            background: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
-    </style>
+        
 </head>
+
 <body>
     <header>
         <h1>&#9992; Sellmiles</h1>
@@ -111,26 +70,101 @@
                                 <option value="DE">Germany</option>
                                 <option value="FR">France</option>
                                 <option value="JP">Japan</option>
+                                <option value="IN">India</option>
+                                <option value="CN">China</option>
+                                <option value="BR">Brazil</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="MX">Mexico</option>
+                                <option value="RU">Russia</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="IT">Italy</option>
+                                <option value="ES">Spain</option>
+                                <option value="KR">South Korea</option>
+                                <option value="SE">Sweden</option>
+                                <option value="NO">Norway</option>
+                                <option value="FI">Finland</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="IE">Ireland</option>
                             </select>
-
                             <input type="text" name="address_line1" placeholder="Address Line 1" required>
                             <input type="text" name="address_line2" placeholder="Address Line 2">
                             <input type="text" name="city" placeholder="City" required>
-
                             <label for="state">State/Province</label>
-                            <input type="text" id="state" name="state" placeholder="State / Province">
+                            <select id="state" name="state" required>
+                                <option value="">-- Select State/Province --</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
 
                             <input type="text" name="zip" placeholder="ZIP / Postal Code" required>
                         </fieldset>
 
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone" placeholder="+1 234 567 890" required>
+                        <input type="tel" id="phone-number" name="phone" placeholder="234 567 890" required value="+1 "
+                            onfocus="this.value = this.value.trim()">
+
+                        <script>
+                            document.getElementById('phone-number').addEventListener('input', function () {
+                                if (!this.value.startsWith('+1 |')) {
+                                    this.value = '+1 | ' + this.value.replace('+1 | ', '');
+                                }
+                            });
+                        </script>
                     </fieldset>
 
-                    <button type="submit">Continue</button>
+                    <a href="./verify.html"><button type="submit">Continue &rarr;</button></a>
                 </form>
             </div>
         </section>
     </section>
 </body>
+
 </html>

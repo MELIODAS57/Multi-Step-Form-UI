@@ -36,7 +36,7 @@
     margin: 0 auto;  
     padding: 30px;
     background: #ffffff;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 100%; 
@@ -100,3 +100,57 @@ div{
   margin: 0;
   padding: 0;
 }
+form {
+    border: none;
+}
+h1{
+    text-align: center;
+    margin: 20px 20px 50px 20px;
+}
+/* Remove fieldset default border */
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .name-fields {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        input,
+        select {
+            display: block;
+            width: 100%;
+            margin-top: 0.3rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+        button:hover{
+          color: rgb(39, 39, 134);
+        }
+    
