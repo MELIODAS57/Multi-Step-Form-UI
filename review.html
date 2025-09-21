@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review and Finish Up</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sellmiles</h1>
+    </header>
+
+    <section class="container">
+        <section class="group-container">
+            <!-- Sidebar Steps -->
+            <div class="col-1-3">
+                <ul class="listes">
+                    <li class="liste active">
+                        <div class="number two">✓</div>
+                        <div class="info">Personal Details</div>
+                    </li>
+                    <li class="liste">
+                        <div class="number two">✓</div>
+                        <div class="info">Verify Your Account</div>
+                    </li>
+                    <li class="liste">
+                        <div class="number one">3</div>
+                        <div class="info">Review & Finish</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Review Section -->
+            <div class="col-2-3">
+                <div class="head">
+                    <h2>Review and Finish Up</h2>
+                    <p>You're almost ready to sell your miles. Take a moment to review and confirm your information.</p>
+                </div>
+
+                <form class="account" action="#" method="post">
+                    <div class="details">
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <label for="legal-name">
+                                Legal name
+                            <input type="text" id="legal-name" name="legal_name" value="Marshall Rutherford" required>
+                            </label>
+
+                            <label for="email">
+                                Email address
+                            <input type="email" id="email" name="email" value="MarshallRutherford@gmail.com" required>
+                            </label>
+
+                            <label for="dob">
+                                Date of birth
+                            <input type="date" id="dob" name="dob" value="1994-01-21" required>
+                            </label>
+
+                            <label for="address">
+                                Home address
+                            <input type="text" id="address" name="address" value="2750 Regent Blvd, Near main road, Dallas, Texas 75261" required>
+                            </label>
+
+                            <label for="phone">
+                                Phone number
+                            <input type="tel" id="phone" name="phone" value="(972) 586-1000" required>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="details">
+                        <fieldset>
+                            <legend>Account Details</legend>
+                            <label for="frequent-flyer">
+                                Frequent Flyer Number
+                            <input type="text" id="frequent-flyer" name="frequent_flyer" value="12312312312" required>
+                            </label>
+
+                            <label for="miles">
+                                Number of Miles
+                            <input type="number" id="miles" name="miles" value="50000" required>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="terms">
+                        <h3>Terms and Conditions:</h3>
+                        <p>Once we receive your information, we work quickly to verify it.</p>
+                    </div>
+
+                    <button type="submit">Confirm &rarr;</button>
+                </form>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

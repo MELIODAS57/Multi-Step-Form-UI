@@ -24,7 +24,7 @@
     margin-right: 10px;
     }
     .one{
-        background-color: blue;
+        background-color: rgb(23, 109, 238);
     }
     .liste {
             display: flex;
@@ -152,5 +152,41 @@ h1{
         }
         button:hover{
           color: rgb(39, 39, 134);
+        }
+        .listes {
+            list-style: none;
+            padding: 0;
+        }
+        .liste {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .number {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .head {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .two{
+          background-color: green;
         }
     
