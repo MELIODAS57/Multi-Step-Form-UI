@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review and Finish Up</title>
     <link rel="stylesheet" href="./css/styles.css">
+        
 </head>
 
 <body>
@@ -18,17 +19,17 @@
             <!-- Sidebar Steps -->
             <div class="col-1-3">
                 <ul class="listes">
-                    <li class="liste active">
+                    <li class="liste ">
                         <div class="number two">✓</div>
-                        <div class="info">Personal Details</div>
+                        <div class="info"><a href="./index.html">Personal Details</a></div>
                     </li>
                     <li class="liste">
                         <div class="number two">✓</div>
-                        <div class="info">Verify Your Account</div>
+                        <div class="info"><a href="./verify.html">Verify Your Account</a></div>
                     </li>
                     <li class="liste">
                         <div class="number one">3</div>
-                        <div class="info">Review & Finish</div>
+                        <div class="info"><a href="./review.html">Review & Finish</a></div>
                     </li>
                 </ul>
             </div>
@@ -46,27 +47,27 @@
                             <legend>Personal Details</legend>
                             <label for="legal-name">
                                 Legal name
-                            <input type="text" id="legal-name" name="legal_name" value="Marshall Rutherford" required>
+                                <input type="text" id="legal-name" name="legal_name" value="Marshall Rutherford" required>
                             </label>
 
                             <label for="email">
                                 Email address
-                            <input type="email" id="email" name="email" value="MarshallRutherford@gmail.com" required>
+                                <input type="email" id="email" name="email" value="MarshallRutherford@gmail.com" required>
                             </label>
 
                             <label for="dob">
                                 Date of birth
-                            <input type="date" id="dob" name="dob" value="1994-01-21" required>
+                                <input type="date" id="dob" name="dob" value="1994-01-21" required>
                             </label>
 
                             <label for="address">
                                 Home address
-                            <input type="text" id="address" name="address" value="2750 Regent Blvd, Near main road, Dallas, Texas 75261" required>
+                                <input type="text" id="address" name="address" value="2750 Regent Blvd, Near main road, Dallas, Texas 75261" required>
                             </label>
 
                             <label for="phone">
                                 Phone number
-                            <input type="tel" id="phone" name="phone" value="(972) 586-1000" required>
+                                <input type="tel" id="phone" name="phone" value="(972) 586-1000" required>
                             </label>
                         </fieldset>
                     </div>
@@ -76,22 +77,56 @@
                             <legend>Account Details</legend>
                             <label for="frequent-flyer">
                                 Frequent Flyer Number
-                            <input type="text" id="frequent-flyer" name="frequent_flyer" value="12312312312" required>
+                                <input type="text" id="frequent-flyer" name="frequent_flyer" value="12312312312" required>
                             </label>
 
                             <label for="miles">
                                 Number of Miles
-                            <input type="number" id="miles" name="miles" value="50000" required>
+                                <input type="number" id="miles" name="miles" value="50000" required>
                             </label>
                         </fieldset>
                     </div>
 
                     <div class="terms">
                         <h3>Terms and Conditions:</h3>
-                        <p>Once we receive your information, we work quickly to verify it.</p>
+                        <p>So that we can ensure smooth transaction, it is important to understand the terms and conditions:</p>
+                        <div>
+                            <h4>Payment Process</h4>
+                            <p>Once we receive all your information, we work quickly to verify your account. Sometimes, we may need to call you in order to complete verification. Once verified, payment will be issued via PayPal within the same business day. Please note: PayPal deducts a 2.9 percent fee.</p>
+                        </div>
+                        <div>
+                            <h4>What do we do:</h4>
+                            <p>1. Once we purchase your airline miles, your miles will then be used towards redemptions of airline tickets. In other words, your account will be used to book airline tickets for third party passengers. You may receive emails regarding the redemption. Should you have any questions, please forward them to our office.</p>
+                            <p>2. Please note that we reserve the right to access the account until the ticket has been utilized (or the passenger has flown and returned).</p>
+                            <p>3. We will only use the amount of miles or points we purchased, even if the account accrued more miles in the meantime.</p>
+                            <p>4. We may also need to add miles in order to book a ticket if the account does not have enough miles. The additional miles belong to us as well and we only add them before booking if necessary.</p>
+                        </div>
+                        <div>
+                            <h4>What you should do / Or Not do:</h4>
+                            <p>As you are aware, even though legal, selling of miles and points are against the terms and conditions of the airlines. Therefore, information should not be volunteered about the sale. If you have any questions, you may email us at <strong>info@sellmiles.com</strong>.</p>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="agree-terms" name="terms" checked>
+                                <label for="agree-terms">I agree with the terms and conditions.</label>
+                            </div>
+                            <p>I understand that we do not buy miles that are going to expire within six months of the sale.</p>
+                            <div class="checkbox-group box">
+                                <input type="checkbox" id="no-expiring-miles" name="no-expiring-miles" required>
+                                <label for="no-expiring-miles">I agree with the terms and conditions.</label>
+                            </div>
+                            <p>Please do not change your login or password until the journey is completed or the points are transferred out. Changing the login, pin, or password may result in a payment reversal.</p>
+                            <div class="checkbox-group box">
+                                <input type="checkbox" id="do-not-change-login" name="do-not-change-login" required>
+                                <label for="do-not-change-login">I agree with the terms and conditions.</label>
+                            </div>
+                            <p>I have read the above and agree to the terms by selling my miles or points and providing access to my account.</p>
+                            <div class="checkbox-group box">
+                                <input type="checkbox" id="read-terms" name="read-terms" required>
+                                <label for="read-terms">I agree with the terms and conditions.</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <button type="submit">Confirm &rarr;</button>
+                    <button type="submit">Agree and Submit</button>
                 </form>
             </div>
         </section>
